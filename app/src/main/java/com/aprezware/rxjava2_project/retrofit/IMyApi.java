@@ -5,7 +5,6 @@ import android.database.Observable;
 import com.aprezware.rxjava2_project.model.Post;
 
 import java.util.List;
-
 import retrofit2.http.GET;
 
 /**
@@ -14,5 +13,5 @@ import retrofit2.http.GET;
 
 public interface IMyApi {
     @GET("posts")
-    Observable<List<Post>> getPosts();
+    io.reactivex.Observable<List<Post>> getPosts();
 }
